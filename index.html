@@ -15,7 +15,7 @@
       if (mobile)
         plus.runtime.restart();
         else{
-        history.go(0);
+        location=location.origin;
       }
     }
     document.addEventListener('plusready', function () {
