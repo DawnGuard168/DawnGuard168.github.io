@@ -14,10 +14,9 @@
     function ddd() {
       if (mobile)
         plus.runtime.restart();
-      else
-        // history.go(0);
-        alert(1)
-        location.reload(false)
+        else{
+        history.go(0);
+      }
     }
     document.addEventListener('plusready', function () {
       var webview = plus.webview.currentWebview();
