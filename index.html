@@ -15,7 +15,8 @@
       if (mobile)
         plus.runtime.restart();
       else
-        history.go(0);
+        // history.go(0);
+        location.reload(false)
     }
     document.addEventListener('plusready', function () {
       var webview = plus.webview.currentWebview();
